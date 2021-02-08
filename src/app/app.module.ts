@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { NgStackFormsModule } from '@ng-stack/forms';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 
-import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import { NgStackTestComponent } from './ng-stack-test/ng-stack-test.component';
+import { AppComponent } from "./app.component";
+import { HelloComponent } from "./hello.component";
+import { TestNgModelComponent } from "./test-ng-model/test-ng-model.component";
+import { AppRoutingModule } from "./app.routing.module";
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, NgStackFormsModule ],
-  declarations: [ AppComponent, HelloComponent, NgStackTestComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  declarations: [AppComponent, HelloComponent, TestNgModelComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

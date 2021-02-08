@@ -1,3 +1,15 @@
-p {
+* {
   font-family: Lato;
+}
+
+.generic-container {
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  place-items: center;
+}
+
+.router-outlet {
+  border: 2px solid red;
+  border-radius: 8px;
 }
