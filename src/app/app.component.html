@@ -1,8 +1,10 @@
 <hello name="{{ name }}"></hello>
+<em>Demos</em>
 <ul>
-  Demos
-  <li><a [routerLink]="['/test-ng-model']">Test NgModel</a></li>
+  <li><a [routerLink]="['/']">Clear</a></li>
+	<li><a [routerLink]="['/test-ng-model']">Test NgModel</a></li>
+	<li><a [routerLink]="['/test-cytoscape']">Test Cytoscape</a></li>
 </ul>
-<div class="router-outlet">
-  <router-outlet></router-outlet>
+<div *ngIf="router.url != '/'" class="router-outlet">
+	<router-outlet></router-outlet>
 </div>
